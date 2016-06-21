@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.skb"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+     <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:icon="@drawable/symbol"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <activity
+            android:name="com.skb.fileDownloadTest.DownloadTest"
+            android:label="食客邦" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+ 
+        <activity 
+            android:name="com.skb.ui.SweetActivity">
+        </activity>
+      <!--   <activity 
+            android:name="com.skb.ui.HangoutActivity">
+        </activity> -->
+        <activity 
+            android:name="com.skb.ui.AcidActivity">
+        </activity>
+        <activity 
+            android:name="com.skb.ui.SpicyActivity">
+        </activity>
+        <activity 
+            android:name="com.skb.ui.SaltyActivity">
+        </activity>
+        <activity 
+            android:name="com.skb.ui.MoreActivity">
+        </activity>
+          <activity 
+            android:name="com.skb.ui.SortActivity">
+        </activity>
+        <activity 
+            android:name="com.skb.bmob.QueryMessage">
+        </activity>
+    </application>
+
+</manifest>
